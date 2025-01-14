@@ -6,6 +6,7 @@
     }
 
     .card{
+      overflow: hidden;
       position: relative;
       &:before{
         content: "";
@@ -15,9 +16,23 @@
         background: linear-gradient(
             180deg,
             transparent 0% , 
-            #020617 70%
+            #020617 100%
         );
         
       }
+     figcaption{
+      position: absolute;
+      bottom: 0;
+      padding: 24px;
+       
+      &::has(.text-large){
+        padding: 12px;
+      }
+      h2{
+        margin-top: 8px;
+      }
+
+     }
+
     }
 }
